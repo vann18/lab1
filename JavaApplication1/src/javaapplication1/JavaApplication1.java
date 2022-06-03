@@ -46,11 +46,13 @@ public class JavaApplication1 {
         grQuery.setParameter("name", "It-1");
         Gruppyi gr=(Gruppyi) grQuery.list().get(0);
         
-        Studentyi d= new Studentyi(11111, gr, "Egor", "Tolkach","Egorovich", "Chashniky", "M 2-3-22", "+375333479430", "created" ,new Date());
+        Studentyi d= new Studentyi(11111, gr, "Egor", "Tolkach","Zalypinsk", "Chashniky", "M 2-3-22", "+375333479430", "created" ,new Date());
         s.persist(d);
         t2.commit();
         s.close();
         sf.close();
+        
+        
         
         
     }
